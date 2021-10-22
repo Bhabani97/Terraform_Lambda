@@ -27,12 +27,9 @@ resource "aws_iam_role_policy" "test_policy" {
   # Terraform expression result to valid JSON syntax.
   policy = jsonencode({
   "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "Stmt1634809844476",
+  {
       "Action": "logs:*",
-      "Effect": "Allow",
-      "Resource": "*"
+    
     }
   ]
 })
